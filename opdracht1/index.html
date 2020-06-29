@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title> SpaceX ITSI </title>
+	 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	 <link type="text/css" rel="stylesheet" href="opmaak.css"/>
+	 <meta name="viewport" content="width=device-width">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	 <script src="script.js"></script>
+	 <script src="data.js"></script>
+</head>
+<body>
+
+<div id="schermen">
+
+<!-- Nav/Header  -->
+ 	<div id="nav"> <h1>Interplanetary Transport System Interface</h1> </div>
+
+<!-- Vanuit hier wordt de grafiek getoond  -->
+ 	<div id="grafiek1"> 
+ 	 	    <canvas id="statistiek1">  </canvas> 
+ 	 	    <input id=naamS1 type="text" placeholder="Voeg een naam toe"/>
+ 	 	  	<input id="numS1" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS1" onclick="addDataStat1()">Voeg data toe</button>
+ 			<button id="undoS1" onclick="deleteDataStat1()">Verwijder data</button>
+ 	</div>
+
+<!-- Vanuit hier wordt de tweede grafiek getoond  -->
+ 	<div id="grafiek2"> 
+ 		 	<canvas id="statistiek2">  </canvas> 
+ 	 	    <!-- <input id=naamS2 type="text" placeholder="Douches, Toiletten, Vaatwassers, Wasmachines, Wastafels"/> -->
+
+ 	 	    <select id="naamS2">
+ 	 	    	<option value="0">Pasta</option>
+ 	 	    	<option value="1">Rijst</option>
+ 	 	    	<option value="2">Vlees</option>
+ 	 	    	<option value="3">Vis</option>
+ 	 	    	<option value="4">Groenten</option>
+ 	 	    </select>
+
+ 	 	  	<input id="numS2" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS2" onclick="addDataStat2()">Voeg data toe</button>
+ 			<button id="undoS2" onclick="deleteDataStat2()">Verwijder data</button>
+ 	</div>
+
+<!-- Vanuit hier wordt de derde grafiek weergegeven  -->
+ 	<div id="grafiek3">
+ 		 	<canvas id="statistiek3">  </canvas> 
+ 	 	    <input id=naamS3 type="text" placeholder="Voeg een naam toe"/>
+ 	 	  	<input id="numS3" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS3" onclick="addDataStat3()">Voeg data toe</button>
+ 			<button id="undoS3" onclick="deleteDataStat3()">Verwijder data</button>
+ 	</div>
+
+<!-- Footer  -->
+ 	<div id="footer"> Marieke de Vries 16085744 </div>
+</div>
+</body>
+</html>
+
